@@ -35,9 +35,8 @@ import PropTypes from 'prop-types'
 
     return (
       <Container>
+        <>
         <SignForm onSubmit={this.handleSubmit}>
-          <h1>Boas vindas</h1>
-
             <span>E-MAIL</span>
             <input type="email" name="email" value={email} onChange={this.handleInputChange}/>
 
@@ -46,6 +45,7 @@ import PropTypes from 'prop-types'
 
             <Button size="big" type="submit">Entrar</Button>
     </SignForm>
+            </>
   </Container>
     )
   }
